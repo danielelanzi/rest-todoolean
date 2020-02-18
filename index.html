@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
+  <title>Todo</title>
+</head>
+<body>
+
+  <input id="input-add" type="text" name="text" value=""placeholder="inserisci un testo">
+  <button id="button-add" type="button" name="button">Salva</button>
+  <h2>Todos</h2>
+  <ul class="todos">
+
+  </ul>
+
+
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="todo" data-id='{{id}}'>
+      {{text}}
+      <div class="delete-todo">
+        x
+      </div>
+    </li>
+  </script>
+
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>
